@@ -1,6 +1,6 @@
 # Projeto de Teoria da Computação - GCC108
 
-Este projeto prático foi desenvolvido como parte da disciplina de Teoria da Computação, ministrada pelo professor [Rafael Serapilha Durelli](https://campusvirtual.ufla.br/presencial/user/view.php?id=22355&course=50378) na [Universidade Federal de Lavras (UFLA)]().
+Este projeto prático foi desenvolvido como parte da disciplina de Teoria da Computação, ministrada pelo professor [Rafael Serapilha Durelli](https://campusvirtual.ufla.br/presencial/user/view.php?id=22355&course=50378) na [Universidade Federal de Lavras (UFLA)](https://ufla.br).
 
 O objetivo do trabalho consistiu na implementação de Máquinas de Turing por meio de uma REST API, utilizando a framework FastAPI, e posteriormente na dockerização da aplicação com o Docker.
 
