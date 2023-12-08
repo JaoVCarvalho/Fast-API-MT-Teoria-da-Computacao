@@ -14,7 +14,12 @@ Documentação utilizada para o desenvolvimento das Máquinas de Turing: [automa
 ### Docker Image
 
 ```cmd
+
+# Versão em inglês do retorno da API
 docker container run -p 8000:8000 jaocarvalho/fastapi-teoria-da-computacao:v0
+
+# Versão em português do retorno da API
+docker container run -p 8000:8000 jaocarvalho/fastapi-teoria-da-computacao:v1
 ````
 
 

@@ -48,14 +48,14 @@ async def automata(request: Request):
     if dfa.accepts_input(input_tape):
         return {
             "MT": "DFA que corresponde a todas as cadeias binárias que terminam num número ímpar de '1's",
-            "Input Tape": input_tape,
-            "Result": "accepted"
+            "Fita de Entrada": input_tape,
+            "Resultado": "Aceito"
         }
     else:
         return {
             "MT": "DFA que corresponde a todas as cadeias binárias que terminam num número ímpar de '1's",
-            "Input Tape": input_tape,
-            "Result": "rejected"
+            "Fita de Entrada": input_tape,
+            "Resultado": "Rejeitado"
         }
 
 @app.post("/dpda")
@@ -114,14 +114,14 @@ async def automata(request: Request):
         if dpda.accepts_input(input_tape):
             return {
                 "MT": "DPDA que corresponde a zero ou mais 'a's, seguido do mesmo número de 'b's (aceitando por estado final)",
-                "Input Tape": input_tape,
-                "Result": "accepted"
+                "Fita de Entrada": input_tape,
+                "Resultado": "Aceito"
             }
         else:
             return {
                 "MT": "DPDA que corresponde a zero ou mais 'a's, seguido do mesmo número de 'b's (aceitando por estado final)",
-                "Input Tape": input_tape,
-                "Result": "rejected"
+                "Fita de Entrada": input_tape,
+                "Resultado": "Rejeitado"
             }
 
 @app.post("/nfa")
@@ -165,12 +165,12 @@ async def automata(request: Request):
         if nfa.accepts_input(input_tape):
             return {
                 "MT": "NFA que corresponde a cadeias de caracteres que começam com 'a', terminam com 'a' e não contêm 'b's consecutivo",
-                "Input Tape": input_tape,
-                "Result": "accepted"
+                "Fita de Entrada": input_tape,
+                "Resultado": "Aceito"
             }
         else:
             return {
-                "MT": "NFA which matches strings beginning with 'a', ending with 'a', and containingno consecutive 'b's",
-                "Input Tape": input_tape,
-                "Result": "rejected"
+                "MT": "NFA que corresponde a cadeias de caracteres que começam com 'a', terminam com 'a' e não contêm 'b's consecutivo",
+                "Fita de Entrada": input_tape,
+                "Resultado": "Rejeitado"
             }
